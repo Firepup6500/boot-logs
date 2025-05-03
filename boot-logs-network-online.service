@@ -1,0 +1,10 @@
+[Unit]
+Description=Boot-logs Service
+
+[Service]
+ExecStart=/home/firepup650/projects/boot-logs/logger.sh
+Requires=network-online.target
+After=network-online.target
+
+[Install]
+WantedBy=multi-user.target
